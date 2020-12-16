@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityKepster"
+    android:background="@color/colorPrimary">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="280dp"
+        android:background="@color/colorPrimaryDark"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_desc"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:text="Barbershop Finder"
+        android:textSize="36sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/gothamroundedbold"></TextView>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cv_profile"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:text="Dapatkan barbershop yang cocok menggunakan aplikasi ini dengan mudah."
+        android:textSize="12sp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/white_primaryText"
+        android:fontFamily="@font/gothamroundedmedium"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/cv_menu"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/img_barber"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_profile"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_hai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/img_barber"
+                android:text="Hai..."
+                android:fontFamily="@font/gothamroundedmedium"
+                android:textColor="@color/black_secondaryText"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hai"
+                android:layout_toRightOf="@+id/img_barber"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="20dp"
+                android:text="Cartenz Barbershop"
+                android:fontFamily="@font/gothamroundedbold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_above="@+id/cv_cari"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_waitingList"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_checklist"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/img_location"
+                        android:text="Waiting list"
+                        android:gravity="center"
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:textSize="16dp"
+                        android:textColor="@color/black_primaryText"></TextView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="150dp"
+                    android:background="#D8D8D8"></View>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_orderDone"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_order"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/img_barber"
+                        android:text="Order done"
+                        android:gravity="center"
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:textSize="16dp"
+                        android:textColor="@color/black_primaryText"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="-70dp"
+        android:src="@drawable/ic_bg_circle2"></ImageView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="-15dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_bg_dots"></ImageView>
+
+</RelativeLayout>

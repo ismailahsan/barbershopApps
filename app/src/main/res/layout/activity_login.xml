@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="-80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_bg_dots"></ImageView>
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_undraw_barber_3uel"></ImageView>
+
+    <TextView
+        android:id="@+id/tv_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_login"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:text="Login"
+        android:fontFamily="@font/gothamroundedbold"
+        android:textSize="24sp"
+        android:textColor="@color/black_primaryText"></TextView>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_signIn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+        android:fontFamily="@font/gothamroundedmedium"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:textColor="@color/black_primaryText"></EditText>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:fontFamily="@font/gothamroundedmedium"
+        android:textSize="16sp"
+        android:textColor="@color/black_primaryText"></EditText>
+
+    <Spinner
+        android:id="@+id/sp_jenisUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pass"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:entries="@array/jenisUser"></Spinner>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sp_jenisUser"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sign in"
+                android:fontFamily="@font/gothamroundedbold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white_primaryText"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/penggunaBaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Pengguna baru ? "
+        android:textColor="@color/black_secondaryText"
+        android:fontFamily="@font/gothamroundedmedium"
+        android:textSize="14sp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_login"
+        android:layout_toRightOf="@+id/penggunaBaru"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:text="Daftar disini"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/gothamroundedbold"
+        android:textSize="14sp"></TextView>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+1. Perbaikan dashboard Utama sesuai gambar yg pernah dikirim, isinya : 
+       a. >2 (tiket yg umurnya open/inprogress diatas 2 hari dari open),
+       b. 1-2 (tiket yang umurnya open/inprogress antara 1-2 hari dari open),
+       c. <1 (tiket yang umurnya open/inprogress dibawah 1 hari dari open),
+       d. closed (tiket yang sudah closed), 
+       e. TTL (total seluruh tiket)
+
+2. pembuatan akun baru manager access
+     a. Lihat tiket poskojar
+     b. Lihat dashboard utama
+     c. Lihat tiket sherina
+     d. Verifikasi akun teknisi
+     e. Reset password teknisi
+     f. View menu fraud
+     g. Download data excel untuk tiket poskojar 
+     h. download data excel untuk tiket sherina
+
+3. Edit akun customer / teknisi di akun admin ditambahkan reset password
+
+4. download data excel untuk admin di user, tiket sherina dan tiket poskojar
+
+5. perbaikan filter data seperti web assurance

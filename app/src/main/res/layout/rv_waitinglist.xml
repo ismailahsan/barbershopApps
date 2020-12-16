@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="2dp"
+                android:textAlignment="center"
+                android:text="17 Okt 2020"
+                android:textColor="@color/white_primaryText"
+                android:fontFamily="@font/gothamroundedmedium"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat"></TextView>
+
+            <TextView
+                android:id="@+id/tv_waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="09:00 am"
+                android:textColor="@color/white_primaryText"
+                android:fontFamily="@font/gothamrounded_lightitalic"
+                android:textSize="12sp"></TextView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cv_img"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black_primaryText"
+                android:fontFamily="@font/gothamroundedbold"
+                android:textSize="16dp"
+                android:text="Ismail Ahsan Mas'ud"></TextView>
+
+            <TextView
+                android:id="@+id/tv_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cv_img"
+                android:layout_below="@+id/tv_customer"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:lines="2"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/black_secondaryText"
+                android:fontFamily="@font/gothamroundedbook"
+                android:textSize="12dp"
+                android:text="BTN Graha Kalegowa Blok D4 nomor 9"></TextView>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_alamat"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_secondaryText"></View>
+
+            <TextView
+                android:id="@+id/tv_layanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/gothamrounded_mediumitalic"
+                android:textSize="12dp"
+                android:text="Potong di rumah"></TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

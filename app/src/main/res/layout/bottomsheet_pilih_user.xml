@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/bottomSheet_pilihLayanan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line1"
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#D8D8D8"></androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/daftarSebagai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/line1"
+        android:text="Daftar sebagai"
+        android:gravity="center"
+        android:fontFamily="@font/gothamroundedmedium"
+        android:textSize="18dp"
+        android:textColor="@color/black_primaryText"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daftarSebagai"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_user"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pengguna biasa"
+                android:gravity="center"
+                android:fontFamily="@font/gothamroundedbook"
+                android:textSize="16dp"
+                android:textColor="@color/black_primaryText"></TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="150dp"
+            android:background="#D8D8D8"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_barber"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_scissors"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/img_barber"
+                android:text="Barbershop"
+                android:gravity="center"
+                android:fontFamily="@font/gothamroundedbook"
+                android:textSize="16dp"
+                android:textColor="@color/black_primaryText"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

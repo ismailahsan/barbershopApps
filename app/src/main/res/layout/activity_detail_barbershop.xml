@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailBarbershop">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary"
+        app:layout_collapseMode="pin">
+
+        <ImageView
+            android:id="@+id/icon_report"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/ic_hairstyle"
+            tools:ignore="VectorDrawableCompat"></ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@+id/icon_report"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Cartenz Barbershop"
+                android:textAllCaps="true"
+                android:singleLine="true"
+                android:fontFamily="@font/gothamroundedbold"
+                android:textColor="@color/white_primaryText"
+                android:textSize="18dp"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/rl_toolbar"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+
+</RelativeLayout>

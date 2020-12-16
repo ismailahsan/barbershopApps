@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCgawX2qgPKVhvyzF1wy22MWynCr2PViO0</string>
+
+    <array name="jenisUser">
+        <item>Customer</item>
+        <item>Kepster</item>
+        <item>Barbershop</item>
+    </array>
+
+</resources>

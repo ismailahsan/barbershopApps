@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableLayout
+                android:id="@+id/tb_waktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/linearLayout">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hari"
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:textColor="@color/black_secondaryText"
+                        android:textSize="16sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  :  "
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:textColor="@color/black_secondaryText"
+                        android:textSize="16sp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_tanggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pilih hari"
+                        android:fontFamily="@font/gothamroundedmedium"
+                        android:textColor="@color/black_primaryText"
+                        android:textSize="16sp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Waktu"
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:textColor="@color/black_secondaryText"
+                        android:textSize="16sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  :  "
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:textColor="@color/black_secondaryText"
+                        android:textSize="16sp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_waktu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pilih waktu"
+                        android:fontFamily="@font/gothamroundedmedium"
+                        android:textColor="@color/black_primaryText"
+                        android:textSize="16sp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lokasi barber"
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:textColor="@color/black_secondaryText"
+                        android:textSize="16sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  :  "
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:textColor="@color/black_secondaryText"
+                        android:textSize="16sp">
+                    </TextView>
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgUpdate"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Pilih waktu"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/gothamroundedmedium"
+                    android:textColor="@color/black_primaryText"></TextView>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white_secondaryText"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tb_waktu"
+                android:layout_marginTop="50dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_batal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:text="Batal"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/gothamroundedmedium"
+                    android:textColor="@color/white_primaryText"
+                    android:background="#F44336"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_pesan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:text="Pesan"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/gothamroundedmedium"
+                    android:textColor="@color/white_primaryText"
+                    android:background="#8BC34A"></TextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
